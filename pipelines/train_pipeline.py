@@ -9,7 +9,7 @@ from src.ocr.dataset import LineDataset
 from src.ocr.train import train_one_epoch, predict_sample
 
 
-def debug_predictions(model, processor, dataset, device, num_samples=3):
+def debug_predictions(model, processor, dataset, device, num_samples=5):
     print("\n🧠 SAMPLE PREDICTIONS:")
 
     for i in range(min(num_samples, len(dataset))):
@@ -34,10 +34,12 @@ def main():
     image_dir = "data/lines"
     label_file = "data/labels/labels.txt"
 
+    print("📦 Loading processor...")
     processor = TrOCRProcessor.from_pretrained(
         "microsoft/trocr-base-handwritten"
     )
 
+    print("📦 Loading dataset...")
     dataset = LineDataset(image_dir, label_file, processor)
 
     loader = DataLoader(
@@ -47,17 +49,19 @@ def main():
         num_workers=0
     )
 
+    print("📦 Building model...")
     model = build_model().to(device)
 
-    # 🔥 optional speed boost
+    # 🔥 IMPORTANT CHANGE: UNFREEZE ENCODER
+    # (you NEED this for new handwriting generalization)
     for param in model.encoder.parameters():
-        param.requires_grad = False
+        param.requires_grad = True
 
     optimizer = torch.optim.AdamW(model.parameters(), lr=2e-5)
 
     losses = []
 
-    for epoch in range(5):
+    for epoch in range(15):   # 🔥 increased epochs
         print(f"\n🔥 EPOCH {epoch+1}")
 
         loss = train_one_epoch(model, loader, optimizer, device)
@@ -65,6 +69,7 @@ def main():
 
         print(f"✅ LOSS: {loss:.4f}")
 
+        # 🔥 better debug
         debug_predictions(model, processor, dataset, device)
 
     os.makedirs("models/ocr", exist_ok=True)

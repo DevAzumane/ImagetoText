@@ -27,7 +27,7 @@ class OCRPredictor:
 
         print("✅ Predictor ready")
 
-    def predict(self, image_path):
+    def predict(self, image_path, return_confidence=False):
         image = Image.open(image_path).convert("RGB")
 
         pixel_values = self.processor(
@@ -36,15 +36,36 @@ class OCRPredictor:
         ).pixel_values.to(self.device)
 
         with torch.no_grad():
-            generated_ids = self.model.generate(
+            outputs = self.model.generate(
                 pixel_values,
-                num_beams=5,
-                max_length=128
+
+                # 🔥 CRITICAL FIX (match training)
+                num_beams=1,                  # remove language hallucination
+                do_sample=False,
+                early_stopping=True,
+                no_repeat_ngram_size=2,
+                max_length=64,
+
+                # 🔥 confidence
+                output_scores=True,
+                return_dict_in_generate=True
             )
+
+        generated_ids = outputs.sequences
 
         text = self.processor.batch_decode(
             generated_ids,
             skip_special_tokens=True
         )[0]
 
-        return text
+        # 🔥 simple confidence score
+        confidence = None
+        if return_confidence:
+            scores = outputs.scores
+            if scores:
+                avg_score = torch.mean(torch.stack([
+                    torch.max(s, dim=-1).values.mean() for s in scores
+                ]))
+                confidence = float(avg_score)
+
+        return text, confidence if return_confidence else text

@@ -17,13 +17,17 @@ def train_one_epoch(model, loader, optimizer, device):
         loss = outputs.loss
 
         loss.backward()
+
+        # 🔥 stabilize training
+        torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
+
         optimizer.step()
         optimizer.zero_grad()
 
         total_loss += loss.item()
 
         if i % 10 == 0:
-            print(f"Batch {i} | Loss: {loss.item():.4f}")
+            print(f"➡ Batch {i} | Loss: {loss.item():.4f}")
 
     return total_loss
 
@@ -39,8 +43,13 @@ def predict_sample(model, processor, image, device):
     with torch.no_grad():
         generated_ids = model.generate(
             pixel_values,
-            num_beams=5,            # 🔥 better decoding
-            max_length=128
+
+            # 🔥 KEY FIXES (reduce hallucination)
+            num_beams=1,              # was 5 → now 1 (less language bias)
+            do_sample=False,
+            early_stopping=True,
+            no_repeat_ngram_size=2,
+            max_length=64             # shorter = less garbage text
         )
 
     return processor.batch_decode(

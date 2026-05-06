@@ -2,6 +2,7 @@ import os
 
 from src.ocr.predict import OCRPredictor
 
+
 def main():
     print("🚀 STARTING INFERENCE")
 
@@ -14,13 +15,16 @@ def main():
 
     print(f"\n📄 Found {len(images)} images\n")
 
-    for img_name in images[:30]:  # limit for quick test
+    for img_name in images[:5]:  # test few samples
         img_path = os.path.join(image_dir, img_name)
 
-        result = predictor.predict(img_path)
+        text, conf = predictor.predict(img_path, return_confidence=True)
 
         print(f"📷 {img_name}")
-        print(f"🧠 {result}\n")
+        print(f"🧠 {text}")
+        print(f"📊 Confidence: {conf:.4f}" if conf else "")
+        print("-" * 50)
+
 
 if __name__ == "__main__":
     main()
