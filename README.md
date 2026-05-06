@@ -1,3 +1,4 @@
+```text
 handwriting_ai/               # handwriting model
 │
 ├── data/
@@ -38,3 +39,4 @@ handwriting_ai/               # handwriting model
 ├── logs/
 │
 └── main.py
+```
