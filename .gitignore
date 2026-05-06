@@ -1,0 +1,53 @@
+# --------------------
+# Python cache
+# --------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --------------------
+# Data (VERY IMPORTANT)
+# --------------------
+data/
+
+# If you ever want labels only, comment the above
+# and use instead:
+# data/*
+# !data/labels/
+# !data/labels/*.txt
+# !data/labels/*.xlsx
+
+# --------------------
+# Outputs / predictions
+# --------------------
+outputs/
+
+# --------------------
+# Notebooks
+# --------------------
+*.ipynb
+.ipynb_checkpoints/
+
+# --------------------
+# Models / artifacts (future-proof)
+# --------------------
+models/
+checkpoints/
+*.h5
+*.pt
+*.pth
+*.onnx
+*.pkl
+
+# --------------------
+# Environment / secrets
+# --------------------
+.env
+venv/
+
+# --------------------
+# OS junk
+# --------------------
+.DS_Store
+Thumbs.db

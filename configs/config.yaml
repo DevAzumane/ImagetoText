@@ -1,0 +1,4 @@
+ocr:
+	# Full path to the Tesseract executable on Windows
+	tesseract_cmd: "C:\\Users\\devprasath.c\\AppData\\Local\\Programs\\Tesseract-OCR\\tesseract.exe"
+
