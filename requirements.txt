@@ -1,0 +1,19 @@
+# ── FastAPI stack ─────────────────────────────────────────────────────────────
+fastapi>=0.111
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9      # multipart/form-data uploads
+pydantic>=2.7
+pydantic-settings>=2.3
+
+# ── Existing project deps (unchanged) ────────────────────────────────────────
+Pillow==12.0.0
+fpdf2>=2.7
+requests>=2.31
+python-dotenv>=1.0
+
+# ── Optional: For development and testing ───────────────────────────────────
+ollama==0.6.1
+opencv-python==4.13.0.90
+numpy==2.3.5
+python-docx==1.2.0
+
