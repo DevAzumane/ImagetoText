@@ -124,14 +124,185 @@ class CharacterSegmenter:
                 cleaned[labels == label] = 0
 
         return cleaned
+    
+    def _tight_crop(self, image):
+
+        inverted = cv2.bitwise_not(image)
+
+        # -----------------------------------
+        # FIND REAL INK PIXELS
+        # -----------------------------------
+
+        rows = np.where(np.sum(inverted > 0, axis=1) > 2)[0]
+        cols = np.where(np.sum(inverted > 0, axis=0) > 2)[0]
+
+        if len(rows) == 0 or len(cols) == 0:
+            return image
+
+        y1, y2 = rows[0], rows[-1]
+        x1, x2 = cols[0], cols[-1]
+
+        # -----------------------------------
+        # EXTRA EDGE CLEANUP
+        # -----------------------------------
+
+        # remove weak left-edge bleed
+        while x1 < x2:
+
+            col_ink = np.sum(inverted[:, x1] > 0)
+
+            if col_ink > 3:
+                break
+
+            x1 += 1
+
+        # remove weak bottom bleed
+        while y2 > y1:
+
+            row_ink = np.sum(inverted[y2, :] > 0)
+
+            if row_ink > 3:
+                break
+
+            y2 -= 1
+
+        pad = 4
+
+        x1 = max(0, x1 - pad)
+        y1 = max(0, y1 - pad)
+        x2 = min(image.shape[1], x2 + pad)
+        y2 = min(image.shape[0], y2 + pad)
+
+        return image[y1:y2, x1:x2]
+    
+    def _tighten_crop(self, crop):
+
+            coords = cv2.findNonZero(crop)
+
+            if coords is None:
+                return crop
+
+            x, y, w, h = cv2.boundingRect(coords)
+
+            # small safe margin
+            pad = 6
+
+            x1 = max(0, x - pad)
+            y1 = max(0, y - pad)
+            x2 = min(crop.shape[1], x + w + pad)
+            y2 = min(crop.shape[0], y + h + pad)
+
+            return crop[y1:y2, x1:x2]
 
     def _clean_binary_crop(self, raw_mask, bounds):
+
         x1, y1, x2, y2 = bounds
+
         mask_crop = raw_mask[y1:y2, x1:x2]
+
         mask_crop = self._remove_horizontal_runs(mask_crop)
+
         mask_crop = self._remove_bottom_rule_fragments(mask_crop)
+
         mask_crop = self._remove_bottom_specks(mask_crop)
-        return cv2.bitwise_not(mask_crop)
+
+        # -----------------------------------
+        # REMOVE ONLY TINY EDGE NOISE
+        # -----------------------------------
+
+        count, labels, stats, _ = cv2.connectedComponentsWithStats(mask_crop, 8)
+
+        cleaned = np.zeros_like(mask_crop)
+
+        height, width = mask_crop.shape[:2]
+
+        for label in range(1, count):
+
+            x = stats[label, cv2.CC_STAT_LEFT]
+            y = stats[label, cv2.CC_STAT_TOP]
+            w = stats[label, cv2.CC_STAT_WIDTH]
+            h = stats[label, cv2.CC_STAT_HEIGHT]
+            area = stats[label, cv2.CC_STAT_AREA]
+
+            touches_left = x <= 2
+            touches_bottom = (y + h) >= (height - 2)
+
+            tiny_noise = area < 18
+
+            # remove only micro edge junk
+            if tiny_noise and (touches_left or touches_bottom):
+                continue
+
+            cleaned[labels == label] = 255
+
+        # -----------------------------------
+        # SECOND PASS CLEANUP
+        # -----------------------------------
+
+        final_count, final_labels, final_stats, _ = cv2.connectedComponentsWithStats(
+            cleaned,
+            8
+        )
+
+        for label in range(1, final_count):
+
+            x = final_stats[label, cv2.CC_STAT_LEFT]
+            y = final_stats[label, cv2.CC_STAT_TOP]
+            w = final_stats[label, cv2.CC_STAT_WIDTH]
+            h = final_stats[label, cv2.CC_STAT_HEIGHT]
+            area = final_stats[label, cv2.CC_STAT_AREA]
+
+            touches_left = x <= 4
+            touches_bottom = (y + h) >= (height - 4)
+
+            tiny_blob = area < 25
+
+            if tiny_blob and (touches_left or touches_bottom):
+                cleaned[final_labels == label] = 0
+
+        # -----------------------------------
+        # REMOVE LEFT EDGE BLEED
+        # -----------------------------------
+
+        height, width = cleaned.shape[:2]
+
+        for col in range(min(10, width // 4)):
+
+            column = cleaned[:, col]
+
+            ink_rows = np.where(column > 0)[0]
+
+            # empty edge column
+            if len(ink_rows) == 0:
+                cleaned[:, col] = 0
+                continue
+
+            vertical_span = ink_rows[-1] - ink_rows[0]
+
+            # tiny left-edge artifact
+            if vertical_span < height * 0.22:
+                cleaned[:, col] = 0
+            else:
+                break
+
+        # -----------------------------------
+        # REMOVE BOTTOM EDGE BLEED
+        # -----------------------------------
+
+        for row in range(height - 1, max(height - 10, 0), -1):
+
+            row_pixels = cleaned[row, :]
+
+            ink = np.sum(row_pixels > 0)
+
+            # weak bottom bleed only
+            if ink <= width * 0.10:
+                cleaned[row, :] = 0
+            else:
+                break
+
+        return cv2.bitwise_not(cleaned)
+
 
     def _component_boxes(self, mask):
         count, _, stats, _ = cv2.connectedComponentsWithStats(mask, 8)
@@ -197,17 +368,42 @@ class CharacterSegmenter:
         for count, box in enumerate(boxes):
             x, y, w, h = box
 
-            x1 = max(0, x - self.padding)
-            y1 = max(0, y - self.padding)
-            x2 = min(column_image.shape[1], x + w + self.padding)
-            y2 = min(column_image.shape[0], y + h + self.padding)
+            left_pad = self.padding
+            top_pad = self.padding
+            right_pad = self.padding
+            bottom_pad = self.padding
 
-            char_crop = self._clean_binary_crop(raw_mask, (x1, y1, x2, y2))
+            # reduce aggressive expansion
+            # specifically where bleed happens
+
+            if prefix == "lower":
+                left_pad = max(6, self.padding - 10)
+                bottom_pad = max(6, self.padding - 10)
+
+            x1 = max(0, x - left_pad)
+            y1 = max(0, y - top_pad)
+
+            x2 = min(column_image.shape[1], x + w + right_pad)
+            y2 = min(column_image.shape[0], y + h + bottom_pad)
+
+            char_crop = self._clean_binary_crop(
+                raw_mask,
+                (x1, y1, x2, y2)
+            )
+            # dynamic re-tightening
+            inverted = cv2.bitwise_not(char_crop)
+
+            tight = self._tighten_crop(inverted)
+
+            char_crop = cv2.bitwise_not(tight)
+
+            char_crop = self._tight_crop(char_crop)
 
             save_path = os.path.join(
                 output_dir,
                 f"{prefix}_{count:02d}.png"
             )
+
 
             cv2.imwrite(save_path, char_crop)
 

@@ -223,6 +223,21 @@ class HandwritingRenderer:
 
         image = Image.open(path).convert("L")
 
+        # ---------------------------------
+        # FORCE CONSISTENT BINARY INK
+        # ---------------------------------
+
+        image_np = np.array(image)
+
+        # remove grayscale softness variation
+        image_np = np.where(
+            image_np < 185,
+            0,
+            255
+        ).astype(np.uint8)
+
+        image = Image.fromarray(image_np)
+
         mask = image.point(
             lambda value: 255 if value < 245 else 0
         )
@@ -259,9 +274,72 @@ class HandwritingRenderer:
         alpha = image.point(
             lambda value: max(
                 0,
-                min(255, int((255 - value) * 1.8))
+                min(255, int((255 - value) * 1.35))
             )
         )
+        # ---------------------------------
+        # NORMALIZED INK DENSITY
+        # ---------------------------------
+
+        ink = np.array(image)
+
+        # estimate darkness density
+        dark_pixels = np.sum(ink < 200)
+
+        total_pixels = image.width * image.height
+
+        density = dark_pixels / max(1, total_pixels)
+
+        # adaptive alpha strength
+        # dense glyphs get lighter alpha
+        # thin glyphs get stronger alpha
+
+        if density > 0.16:
+            alpha_boost = 1.35
+        elif density > 0.11:
+            alpha_boost = 1.5
+        else:
+            alpha_boost = 1.75
+
+        alpha = image.point(
+            lambda value: max(
+                0,
+                min(255, int((255 - value) * alpha_boost))
+            )
+        )
+        # ---------------------------------
+        # NORMALIZE GLYPH DARKNESS
+        # ---------------------------------
+
+        glyph_np = np.array(image)
+
+        # amount of ink pixels
+        ink_pixels = np.sum(glyph_np < 220)
+
+        # total pixels
+        total_pixels = glyph_np.shape[0] * glyph_np.shape[1]
+
+        density = ink_pixels / max(1, total_pixels)
+
+        # target visual density
+        target_density = 0.085
+
+        # dense glyphs become lighter
+        if density > target_density:
+
+            lighten = min(
+                35,
+                int((density - target_density) * 400)
+            )
+
+            glyph_np = np.clip(
+                glyph_np + lighten,
+                0,
+                255
+            )
+
+        image = Image.fromarray(glyph_np)
+
 
         glyph = Image.new(
             "RGBA",
@@ -933,7 +1011,7 @@ class HandwritingRenderer:
                     wrapped = self._wrap_text_with_glyphs(
                         block_text,
                         max_text_width,
-                        target_glyph_height + 8,
+                        target_glyph_height + 3,
                     )
                 else:
                     wrapped = self._wrap_text(
@@ -948,7 +1026,7 @@ class HandwritingRenderer:
 
                     if use_glyphs:
                         line_width = sum(
-                            self._glyph_width(c, target_glyph_height + 8)
+                            self._glyph_width(c, target_glyph_height + 3)
                             for c in line
                         )
                     else:
@@ -963,7 +1041,7 @@ class HandwritingRenderer:
                             line,
                             center_x,
                             current_title_y,
-                            target_glyph_height + 8,
+                            target_glyph_height + 3,
                             text_color,
                         ).convert("RGB")
                     else:
@@ -999,7 +1077,7 @@ class HandwritingRenderer:
                         block_text,
                         margin_left,
                         line_y + baseline_nudge,
-                        target_glyph_height + 3,
+                        target_glyph_height,
                         text_color,
                     ).convert("RGB")
                 else:
@@ -1023,7 +1101,7 @@ class HandwritingRenderer:
                     wrapped = self._wrap_text_with_glyphs(
                         block_text,
                         max_text_width,
-                        target_glyph_height,
+                        target_glyph_height - 4,
                     )
                 else:
                     wrapped = self._wrap_text(
@@ -1042,7 +1120,7 @@ class HandwritingRenderer:
                             line,
                             margin_left,
                             line_y + baseline_nudge,
-                            target_glyph_height,
+                            target_glyph_height - 4,
                             text_color,
                         ).convert("RGB")
                     else:
@@ -1070,105 +1148,4 @@ class HandwritingRenderer:
         save_current_page()
 
         return page_paths
-
-
-    # def render_text(
-    #     self,
-    #     text,
-    #     output_path="output.png",
-    #     template="random",
-    #     handwriting_source="glyphs",
-    # ):
-
-    #     # -------------------------
-    #     # PAGE SETTINGS
-    #     # -------------------------
-
-    #     width = 1200
-    #     height = 1600
-
-    #     text_color = (31, 34, 38)
-    #     page_template = self._get_template(template)
-    #     margin_left = page_template["margin_x"] + 18
-    #     first_line_y = page_template["first_line_y"]
-    #     line_gap = page_template["line_gap"]
-    #     baseline_nudge = page_template["baseline_nudge"]
-
-    #     image = self._make_paper(width, height, page_template)
-    #     image = self._add_page_depth(image, page_template)
-    #     draw = ImageDraw.Draw(image)
-
-    #     # -------------------------
-    #     # DRAW NOTEBOOK PAGE
-    #     # -------------------------
-
-    #     self._draw_ruled_page(
-    #         draw,
-    #         width,
-    #         height,
-    #         page_template,
-    #     )
-
-    #     # -------------------------
-    #     # WRAP TEXT
-    #     # -------------------------
-
-    #     max_text_width = width - margin_left - page_template["right_edge"]
-    #     target_glyph_height = min(26, line_gap - 24)
-
-    #     if handwriting_source == "glyphs" and self.glyphs:
-    #         wrapped_lines = self._wrap_text_with_glyphs(
-    #             text,
-    #             max_text_width,
-    #             target_glyph_height,
-    #         )
-    #     else:
-    #         wrapped_lines = self._wrap_text(text, draw, max_text_width)
-
-    #     # -------------------------
-    #     # DRAW TEXT
-    #     # -------------------------
-
-    #     line_y = first_line_y
-
-    #     for line in wrapped_lines:
-    #         if handwriting_source == "glyphs" and self.glyphs:
-    #             image = self._draw_glyph_line(
-    #                 image.convert("RGBA"),
-    #                 line,
-    #                 margin_left + self.random.randint(-4, 5),
-    #                 line_y + baseline_nudge,
-    #                 target_glyph_height,
-    #                 text_color,
-    #             ).convert("RGB")
-    #             draw = ImageDraw.Draw(image)
-    #         else:
-    #             x_jitter = self.random.randint(-4, 5)
-    #             y_jitter = self.random.randint(0, 2)
-    #             text_bbox = self.font.getbbox(line)
-    #             text_y = line_y - text_bbox[3] + baseline_nudge + y_jitter
-
-    #             text_layer = Image.new("RGBA", image.size, (0, 0, 0, 0))
-    #             text_draw = ImageDraw.Draw(text_layer)
-    #             text_draw.text(
-    #                 (margin_left + x_jitter, text_y),
-    #                 line,
-    #                 font=self.font,
-    #                 fill=(*text_color, self.random.randint(220, 240)),
-    #             )
-
-    #             text_layer = text_layer.filter(ImageFilter.GaussianBlur(radius=0.12))
-    #             image = Image.alpha_composite(image.convert("RGBA"), text_layer).convert("RGB")
-    #             draw = ImageDraw.Draw(image)
-
-    #         line_y += line_gap
-
-    #     # -------------------------
-    #     # SAVE
-    #     # -------------------------
-
-    #     image = image.filter(ImageFilter.UnsharpMask(radius=1.2, percent=65, threshold=3))
-    #     image.save(output_path)
-
-    #     print(f"[SAVED] {output_path}")
 
