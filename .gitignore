@@ -1,0 +1,4 @@
+qwen_model/
+model_downloader/
+.ocr/
+__pycache__/

@@ -1,0 +1,18 @@
+{
+    "file_name": "data/input/handwritten_01.jpg",
+    "ocr_engine": "PaddleOCR 3.x",
+    "processing_time_seconds": 25.855,
+    "total_pages": 1,
+    "total_words": 20,
+    "average_confidence": 0.904,
+    "low_confidence_words": 0,
+    "version": "1.0",
+    "statistics": {},
+    "outputs": {
+        "json": "data\\output\\handwritten_01\\ocr_document.json",
+        "markdown": "data\\output\\handwritten_01\\document.md",
+        "enhanced_markdown": "data\\output\\handwritten_01\\qwen_document.md",
+        "debug": "data\\output\\handwritten_01\\debug_ocr.png",
+        "chunks": "data\\output\\handwritten_01\\chunks.json"
+    }
+}

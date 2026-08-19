@@ -1,0 +1,1466 @@
+2026-07-27 21:13:24 | INFO     | APP                  | Starting OCR application
+2026-07-27 21:13:24 | INFO     | services.ocr_service | Initializing OCR Service
+2026-07-27 21:13:24 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-07-27 21:13:28 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-07-27 21:13:28 | INFO     | services.ocr_service | OCR Service Ready
+2026-07-27 21:13:28 | INFO     | services.ocr_service | Starting OCR pipeline for C:\Users\devprasath.c\Downloads\shared image (3).jpg
+2026-07-27 21:13:28 | ERROR    | APP                  | OCR pipeline failed
+Traceback (most recent call last):
+  File "C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\app.py", line 21, in main
+    document = ocr_service.run(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\services\ocr_service.py", line 47, in run
+    image, metadata = ImageValidator.validate(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\utils\image_utils.py", line 32, in validate
+    raise FileNotFoundError(
+FileNotFoundError: Image not found : C:\Users\devprasath.c\Downloads\shared image (3).jpg
+2026-07-27 21:16:27 | INFO     | APP                  | Starting OCR application
+2026-07-27 21:16:27 | INFO     | services.ocr_service | Initializing OCR Service
+2026-07-27 21:16:27 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-07-27 21:16:30 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-07-27 21:16:30 | INFO     | services.ocr_service | OCR Service Ready
+2026-07-27 21:16:30 | INFO     | services.ocr_service | Starting OCR pipeline for C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-07-27 21:16:30 | INFO     | pipelines.paddle_pipeline | Running OCR on C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-07-27 21:16:38 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-07-27 21:16:38 | INFO     | services.ocr_service | OCR pipeline completed successfully
+2026-07-27 21:16:38 | INFO     | APP                  | OCR processing completed
+2026-07-27 21:18:58 | INFO     | APP                  | Starting OCR application
+2026-07-27 21:18:58 | INFO     | services.ocr_service | Initializing OCR Service
+2026-07-27 21:18:58 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-07-27 21:19:01 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-07-27 21:19:01 | INFO     | services.ocr_service | OCR Service Ready
+2026-07-27 21:19:01 | INFO     | services.ocr_service | Starting OCR pipeline for C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-07-27 21:19:01 | INFO     | pipelines.paddle_pipeline | Running OCR on C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-07-27 21:19:01 | ERROR    | APP                  | OCR pipeline failed
+Traceback (most recent call last):
+  File "C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\app.py", line 22, in main
+    document = ocr_service.run(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\services\ocr_service.py", line 56, in run
+    document = self.pipeline.run(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\pipelines\paddle_pipeline.py", line 49, in run
+    file_name=image_path.split("\\")[-1]
+              ^^^^^^^^^^^^^^^^
+AttributeError: 'WindowsPath' object has no attribute 'split'
+2026-07-27 21:19:30 | INFO     | APP                  | Starting OCR application
+2026-07-27 21:19:30 | INFO     | services.ocr_service | Initializing OCR Service
+2026-07-27 21:19:30 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-07-27 21:19:33 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-07-27 21:19:33 | INFO     | services.ocr_service | OCR Service Ready
+2026-07-27 21:19:33 | INFO     | services.ocr_service | Starting OCR pipeline for C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-07-27 21:19:33 | INFO     | pipelines.paddle_pipeline | Running OCR on C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-07-27 21:19:33 | ERROR    | APP                  | OCR pipeline failed
+Traceback (most recent call last):
+  File "C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\app.py", line 24, in main
+    document = ocr_service.run(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\services\ocr_service.py", line 56, in run
+    document = self.pipeline.run(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\pipelines\paddle_pipeline.py", line 49, in run
+    file_name=image_path.split("\\")[-1]
+              ^^^^^^^^^^^^^^^^
+AttributeError: 'WindowsPath' object has no attribute 'split'
+2026-07-27 21:21:36 | INFO     | APP                  | Starting OCR application
+2026-07-27 21:21:36 | INFO     | services.ocr_service | Initializing OCR Service
+2026-07-27 21:21:36 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-07-27 21:21:39 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-07-27 21:21:39 | INFO     | services.ocr_service | OCR Service Ready
+2026-07-27 21:21:39 | INFO     | services.ocr_service | Starting OCR pipeline for C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-07-27 21:21:39 | INFO     | pipelines.paddle_pipeline | Running OCR on C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-07-27 21:21:39 | INFO     | pipelines.paddle_pipeline | OCR Completed. 0 text regions detected.
+2026-07-27 21:21:39 | INFO     | services.ocr_service | OCR pipeline completed successfully
+2026-07-27 21:21:39 | INFO     | APP                  | OCR processing completed
+2026-07-27 21:22:29 | INFO     | APP                  | Starting OCR application
+2026-07-27 21:22:29 | INFO     | services.ocr_service | Initializing OCR Service
+2026-07-27 21:22:29 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-07-27 21:22:31 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-07-27 21:22:31 | INFO     | services.ocr_service | OCR Service Ready
+2026-07-27 21:22:31 | INFO     | services.ocr_service | Starting OCR pipeline for C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-07-27 21:22:31 | INFO     | pipelines.paddle_pipeline | Running OCR on C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-07-27 21:22:31 | ERROR    | APP                  | OCR pipeline failed
+Traceback (most recent call last):
+  File "C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\app.py", line 22, in main
+    document = ocr_service.run(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\services\ocr_service.py", line 56, in run
+    document = self.pipeline.run(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\pipelines\paddle_pipeline.py", line 49, in run
+    file_name=image_path.split("\\")[-1]
+              ^^^^^^^^^^^^^^^^
+AttributeError: 'WindowsPath' object has no attribute 'split'
+2026-07-27 21:22:56 | INFO     | APP                  | Starting OCR application
+2026-07-27 21:22:56 | INFO     | services.ocr_service | Initializing OCR Service
+2026-07-27 21:22:56 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-07-27 21:22:58 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-07-27 21:22:58 | INFO     | services.ocr_service | OCR Service Ready
+2026-07-27 21:22:58 | INFO     | services.ocr_service | Starting OCR pipeline for C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-07-27 21:22:58 | INFO     | pipelines.paddle_pipeline | Running OCR on C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-07-27 21:23:06 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-07-27 21:23:06 | INFO     | services.ocr_service | OCR pipeline completed successfully
+2026-07-27 21:23:06 | INFO     | APP                  | OCR processing completed
+2026-07-27 21:31:05 | INFO     | APP                  | Found 1 images
+2026-07-27 21:31:05 | INFO     | services.ocr_service | Initializing OCR Service
+2026-07-27 21:31:05 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-07-27 21:31:08 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-07-27 21:31:08 | INFO     | services.ocr_service | OCR Service Ready
+2026-07-27 21:31:08 | INFO     | services.ocr_service | Starting OCR pipeline for C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-07-27 21:31:08 | INFO     | pipelines.paddle_pipeline | Running OCR on C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-07-27 21:31:14 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-07-27 21:31:14 | INFO     | services.ocr_service | OCR pipeline completed successfully
+2026-07-27 21:41:17 | INFO     | APP                  | Found 1 images
+2026-07-27 21:41:17 | INFO     | services.ocr_service | Initializing OCR Service
+2026-07-27 21:41:17 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-07-27 21:41:20 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-07-27 21:41:20 | INFO     | services.ocr_service | OCR Service Ready
+2026-07-27 21:41:20 | INFO     | services.ocr_service | Starting OCR pipeline for C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-07-27 21:41:20 | INFO     | pipelines.paddle_pipeline | Running OCR on C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-07-27 21:41:29 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-07-27 21:41:29 | INFO     | services.ocr_service | OCR pipeline completed successfully
+2026-07-29 01:47:37 | INFO     | APP                  | Found 1 images
+2026-07-29 01:47:37 | INFO     | services.ocr_service | Initializing OCR Service
+2026-07-29 01:47:37 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-07-29 01:47:41 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-07-29 01:47:41 | INFO     | services.ocr_service | OCR Service Ready
+2026-07-29 01:47:41 | INFO     | services.ocr_service | Starting OCR pipeline for C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-07-29 01:47:41 | INFO     | pipelines.paddle_pipeline | Running OCR on C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-07-29 01:47:50 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-07-29 01:47:50 | ERROR    | APP                  | Failed processing handwritten_01.jpg
+Traceback (most recent call last):
+  File "C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\app.py", line 72, in main
+    document = ocr_service.run(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\services\ocr_service.py", line 60, in run
+    document = self.pipeline.run(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\pipelines\paddle_pipeline.py", line 97, in run
+    document = OCRPostProcessor.process(document)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\postprocessors\ocr_post_processor.py", line 44, in process
+    cls._build_blocks(document)
+  File "C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\postprocessors\ocr_post_processor.py", line 168, in _build_blocks
+    page.blocks = []
+    ^^^^
+UnboundLocalError: cannot access local variable 'page' where it is not associated with a value
+2026-07-29 01:53:59 | INFO     | APP                  | Found 1 images
+2026-07-29 01:53:59 | INFO     | services.ocr_service | Initializing OCR Service
+2026-07-29 01:53:59 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-07-29 01:54:02 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-07-29 01:54:02 | INFO     | services.ocr_service | OCR Service Ready
+2026-07-29 01:54:02 | INFO     | services.ocr_service | Starting OCR pipeline for C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-07-29 01:54:02 | INFO     | pipelines.paddle_pipeline | Running OCR on C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-07-29 01:54:09 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-07-29 01:54:09 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-07-29 01:54:09 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-07-29 01:54:09 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-07-29 01:54:09 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-07-29 01:54:09 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-07-29 01:54:09 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-07-29 01:54:09 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-07-29 01:54:09 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-07-29 01:54:09 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-07-29 01:54:09 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-07-29 01:54:09 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-07-29 01:54:09 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-07-29 01:54:09 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-07-29 01:54:09 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-07-29 01:54:09 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-07-29 01:54:09 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-07-29 01:54:09 | ERROR    | APP                  | Failed processing handwritten_01.jpg
+Traceback (most recent call last):
+  File "C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\app.py", line 72, in main
+    document = ocr_service.run(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\services\ocr_service.py", line 60, in run
+    document = self.pipeline.run(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\pipelines\paddle_pipeline.py", line 97, in run
+    document = OCRPostProcessor.process(document)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\postprocessors\ocr_post_processor.py", line 46, in process
+    cls._merge_paragraphs(document)
+  File "C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\postprocessors\ocr_post_processor.py", line 287, in _merge_paragraphs
+    if OCRPostProcessor._should_merge(current, nxt):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\postprocessors\ocr_post_processor.py", line 321, in _should_merge
+    vertical_gap = nxt.top - current.bottom
+                   ^^^^^^^
+AttributeError: 'OCRBlock' object has no attribute 'top'
+2026-07-29 01:56:18 | INFO     | APP                  | Found 1 images
+2026-07-29 01:56:18 | INFO     | services.ocr_service | Initializing OCR Service
+2026-07-29 01:56:18 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-07-29 01:56:21 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-07-29 01:56:21 | INFO     | services.ocr_service | OCR Service Ready
+2026-07-29 01:56:21 | INFO     | services.ocr_service | Starting OCR pipeline for C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-07-29 01:56:21 | INFO     | pipelines.paddle_pipeline | Running OCR on C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-07-29 01:56:29 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-07-29 01:56:29 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-07-29 01:56:29 | INFO     | services.ocr_service | OCR pipeline completed successfully
+2026-08-03 02:07:45 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-08-03 02:07:49 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-08-03 02:07:49 | INFO     | pipelines.paddle_pipeline | Running OCR on data\input\handwritten_01.jpg
+2026-08-03 02:07:57 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-03 02:07:57 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-03 02:15:19 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-08-03 02:15:22 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-08-03 02:15:22 | INFO     | pipelines.paddle_pipeline | Running OCR on data\input\handwritten_01.jpg
+2026-08-03 02:15:30 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-03 02:15:30 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-03 02:20:29 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-08-03 02:20:32 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-08-03 02:20:32 | INFO     | pipelines.paddle_pipeline | Running OCR on data\input\handwritten_01.jpg
+2026-08-03 02:20:40 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-03 02:20:40 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 17:46:40 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-08-05 17:46:45 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-08-05 17:46:45 | INFO     | pipelines.paddle_pipeline | Running OCR on data\input\handwritten_01.jpg
+2026-08-05 17:46:52 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 17:46:52 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 18:08:51 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-08-05 18:08:54 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-08-05 18:08:54 | INFO     | pipelines.paddle_pipeline | Running OCR on data\input\handwritten_01.jpg
+2026-08-05 18:09:02 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 18:09:02 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 18:13:59 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-08-05 18:14:01 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-08-05 18:14:01 | INFO     | pipelines.paddle_pipeline | Running OCR on data\input\handwritten_01.jpg
+2026-08-05 18:14:09 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 18:14:09 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 18:53:33 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-08-05 18:53:36 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-08-05 18:53:36 | INFO     | pipelines.paddle_pipeline | Running OCR on data\input\handwritten_01.jpg
+2026-08-05 18:53:44 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 18:53:44 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 18:55:03 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-08-05 18:55:06 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-08-05 18:55:06 | INFO     | pipelines.paddle_pipeline | Running OCR on data\input\handwritten_01.jpg
+2026-08-05 18:55:14 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 18:55:14 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 19:00:22 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-08-05 19:00:25 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-08-05 19:00:25 | INFO     | pipelines.paddle_pipeline | Running OCR on data\input\handwritten_01.jpg
+2026-08-05 19:00:33 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 19:00:33 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 19:54:00 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-08-05 19:54:03 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-08-05 19:54:03 | INFO     | pipelines.paddle_pipeline | Running OCR on data\input\handwritten_01.jpg
+2026-08-05 19:54:11 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 19:54:11 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 19:57:22 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-08-05 19:57:25 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-08-05 19:57:25 | INFO     | pipelines.paddle_pipeline | Running OCR on data\input\handwritten_01.jpg
+2026-08-05 19:57:33 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 19:57:33 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 20:09:03 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-08-05 20:09:06 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-08-05 20:09:06 | INFO     | pipelines.paddle_pipeline | Running OCR on data\input\handwritten_01.jpg
+2026-08-05 20:09:12 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 20:09:12 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 20:09:13 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 20:11:44 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-08-05 20:11:48 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-08-05 20:11:48 | INFO     | pipelines.paddle_pipeline | Running OCR on data\input\handwritten_01.jpg
+2026-08-05 20:11:56 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 20:11:56 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 20:15:42 | INFO     | APP                  | Found 1 images
+2026-08-05 20:15:42 | INFO     | services.ocr_service | Initializing OCR Service
+2026-08-05 20:15:42 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-08-05 20:15:44 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-08-05 20:15:44 | INFO     | services.ocr_service | OCR Service Ready
+2026-08-05 20:15:44 | INFO     | services.ocr_service | Starting OCR pipeline for C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-08-05 20:15:45 | INFO     | pipelines.paddle_pipeline | Running OCR on C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-08-05 20:15:52 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 20:15:52 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 20:16:04 | INFO     | services.ocr_service | OCR pipeline completed successfully
+2026-08-05 20:27:30 | INFO     | services.ocr_service | Initializing OCR Service
+2026-08-05 20:27:30 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-08-05 20:27:33 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-08-05 20:27:33 | INFO     | services.ocr_service | OCR Service Ready
+2026-08-05 20:27:33 | INFO     | services.ocr_service | Starting OCR pipeline for data/input/handwritten_01.jpg
+2026-08-05 20:27:33 | INFO     | pipelines.paddle_pipeline | Running OCR on data/input/handwritten_01.jpg
+2026-08-05 20:27:42 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 20:27:42 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 20:27:58 | INFO     | services.ocr_service | OCR pipeline completed successfully
+2026-08-05 20:31:13 | INFO     | services.ocr_service | Initializing OCR Service
+2026-08-05 20:31:13 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-08-05 20:31:15 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-08-05 20:31:15 | INFO     | services.ocr_service | OCR Service Ready
+2026-08-05 20:31:15 | INFO     | services.ocr_service | Starting OCR pipeline for data/input/handwritten_01.jpg
+2026-08-05 20:31:16 | INFO     | pipelines.paddle_pipeline | Running OCR on data/input/handwritten_01.jpg
+2026-08-05 20:31:24 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 20:31:24 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 20:31:36 | INFO     | services.ocr_service | OCR pipeline completed successfully
+2026-08-05 20:33:24 | INFO     | APP                  | Found 1 images
+2026-08-05 20:33:24 | INFO     | services.ocr_service | Initializing OCR Service
+2026-08-05 20:33:24 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-08-05 20:33:27 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-08-05 20:33:27 | INFO     | services.ocr_service | OCR Service Ready
+2026-08-05 20:33:27 | INFO     | services.ocr_service | Starting OCR pipeline for C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-08-05 20:33:27 | INFO     | pipelines.paddle_pipeline | Running OCR on C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-08-05 20:33:35 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 20:33:35 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 20:33:48 | INFO     | services.ocr_service | OCR pipeline completed successfully
+2026-08-05 21:10:10 | INFO     | APP                  | Found 1 images
+2026-08-05 21:10:10 | INFO     | services.ocr_service | Initializing OCR Service
+2026-08-05 21:10:10 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-08-05 21:10:13 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-08-05 21:10:13 | INFO     | services.ocr_service | OCR Service Ready
+2026-08-05 21:10:13 | INFO     | services.ocr_service | Starting OCR pipeline for C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-08-05 21:10:13 | INFO     | pipelines.paddle_pipeline | Running OCR on C:\Projects\ocr_rag\paddle_qwen_ocr\ocr_rag\data\input\handwritten_01.jpg
+2026-08-05 21:10:20 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 21:10:20 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 21:10:32 | INFO     | services.ocr_service | OCR pipeline completed successfully
+2026-08-05 21:33:58 | INFO     | services.ocr_service | Initializing OCR Service
+2026-08-05 21:33:58 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-08-05 21:34:02 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-08-05 21:34:02 | INFO     | services.ocr_service | OCR Service Ready
+2026-08-05 21:34:02 | INFO     | services.ocr_service | Starting OCR pipeline for data/input/handwritten_01.jpg
+2026-08-05 21:34:02 | INFO     | pipelines.paddle_pipeline | Running OCR on data/input/handwritten_01.jpg
+2026-08-05 21:34:09 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 2: → A futue value pepends on the historical value.
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 3: unlike machine leaining models, each obrervation
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 4: depends on others.
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 5: Components of Time serieb :
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 6: 1.) Thend - long teim movement. eithel in upwraid
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 7: Trend line dinection I downward. down Xup
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 8: 2.) seasonality - Reapated paltein at a fixed inteival
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 9: aM
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 10: Jun(21) Jun(2e) 3.) cyclical patteins - long teim businers cycles
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 11: Example - Economic boom/ Recovery, Slowdown, unlike seasor
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 12: 4) Noise - Random fluctuations in the data
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 13: without any Regular pattein.
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 14: Actual Sales = Trend + Seasonality + Noire ]
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 15: Stationay (very Impontant ) in Time series:.
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 16: → Mean and Valiame Remains corstant in
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 9
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.TEXT
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.HEADER
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-05 21:34:09 | INFO     | postprocessors.ocr_post_processor | Block 16 -> BlockType.TEXT
+2026-08-05 21:34:28 | INFO     | services.ocr_service | OCR pipeline completed successfully
+2026-08-12 16:43:57 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-08-12 16:44:01 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-08-12 16:44:01 | INFO     | pipelines.paddle_pipeline | Running OCR on data\input\handwritten_01.jpg
+2026-08-12 16:44:37 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-08-12 16:44:39 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-08-12 16:44:39 | INFO     | pipelines.paddle_pipeline | Running OCR on data\input\handwritten_01.jpg
+2026-08-12 16:44:47 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 2: → Show
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 3: Datadump sor 8 tests. (Kowsuya).
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 4: Datadump for my Analysis 7
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 5: Wormspace for Getaway. (Done) 7
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 6: Change deat Color Analysis. (RWw). 7
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 7: 281712006
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 8: Grtway Segrments for prd grawry
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 9: Deport Shirte, delution
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 10: Seat
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 11: 8
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 12: ( Tier and caud memper.)
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 13: Include Metrics
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 14: Pilated to Seat. from new Worhspace.
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 15: ue rier and Carnd mimner.
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 11
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 7 -> BlockType.TEXT
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.HEADER
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.TEXT
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 11 -> BlockType.TEXT
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 12 -> BlockType.TEXT
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 2: → Show
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 3: Datadump sor 8 tests. (Kowsuya).
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 4: Datadump for my Analysis 7
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 5: Wormspace for Getaway. (Done) 7
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 6: Change deat Color Analysis. (RWw). 7
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 7: 281712006
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 8: Grtway Segrments for prd grawry
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 9: Deport Shirte, delution
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 10: Seat
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 11: 8
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 12: ( Tier and caud memper.)
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 13: Include Metrics
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 14: Pilated to Seat. from new Worhspace.
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 15: ue rier and Carnd mimner.
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 11
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 7 -> BlockType.TEXT
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.HEADER
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.TEXT
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 11 -> BlockType.TEXT
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 12 -> BlockType.TEXT
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-12 16:44:47 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-12 16:48:02 | INFO     | services.ocr_service | Initializing OCR Service
+2026-08-12 16:48:02 | INFO     | pipelines.paddle_pipeline | Initializing PaddleOCR...
+2026-08-12 16:48:05 | INFO     | pipelines.paddle_pipeline | PaddleOCR Initialized Successfully.
+2026-08-12 16:48:05 | INFO     | services.ocr_service | OCR Service Ready
+2026-08-12 16:48:05 | INFO     | services.ocr_service | Starting OCR pipeline for data/input/handwritten_01.jpg
+2026-08-12 16:48:05 | INFO     | pipelines.paddle_pipeline | Running OCR on data/input/handwritten_01.jpg
+2026-08-12 16:48:13 | INFO     | pipelines.paddle_pipeline | OCR Completed. 20 text regions detected.
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 2: → Show
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 3: Datadump sor 8 tests. (Kowsuya).
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 4: Datadump for my Analysis 7
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 5: Wormspace for Getaway. (Done) 7
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 6: Change deat Color Analysis. (RWw). 7
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 7: 281712006
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 8: Grtway Segrments for prd grawry
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 9: Deport Shirte, delution
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 10: Seat
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 11: 8
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 12: ( Tier and caud memper.)
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 13: Include Metrics
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 14: Pilated to Seat. from new Worhspace.
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 15: ue rier and Carnd mimner.
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 11
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 7 -> BlockType.TEXT
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.HEADER
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.TEXT
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 11 -> BlockType.TEXT
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 12 -> BlockType.TEXT
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 1: Date :
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 2: → Show
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 3: Datadump sor 8 tests. (Kowsuya).
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 4: Datadump for my Analysis 7
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 5: Wormspace for Getaway. (Done) 7
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 6: Change deat Color Analysis. (RWw). 7
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 7: 281712006
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 8: Grtway Segrments for prd grawry
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 9: Deport Shirte, delution
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 10: Seat
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 11: 8
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 12: ( Tier and caud memper.)
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 13: Include Metrics
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 14: Pilated to Seat. from new Worhspace.
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 15: ue rier and Carnd mimner.
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Paragraph merging completed. Total blocks: 11
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 1 -> BlockType.TEXT
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 2 -> BlockType.TEXT
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 7 -> BlockType.TEXT
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 8 -> BlockType.TEXT
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 9 -> BlockType.HEADER
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 10 -> BlockType.TEXT
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 11 -> BlockType.TEXT
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 12 -> BlockType.TEXT
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 13 -> BlockType.TEXT
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 14 -> BlockType.TEXT
+2026-08-12 16:48:13 | INFO     | postprocessors.ocr_post_processor | Block 15 -> BlockType.TEXT
+2026-08-12 16:48:31 | INFO     | services.ocr_service | OCR pipeline completed successfully

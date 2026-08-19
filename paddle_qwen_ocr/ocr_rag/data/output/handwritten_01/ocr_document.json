@@ -1,0 +1,1129 @@
+{
+    "file_name": "data/input/handwritten_01.jpg",
+    "version": "1.0",
+    "created_at": "2026-08-12T16:48:13.323692",
+    "pages": [
+        {
+            "page_number": 1,
+            "words": [
+                {
+                    "id": 1,
+                    "text": "Date :",
+                    "confidence": 0.9631860256195068,
+                    "bbox": {
+                        "points": [
+                            [
+                                1054,
+                                121
+                            ],
+                            [
+                                1150,
+                                121
+                            ],
+                            [
+                                1150,
+                                169
+                            ],
+                            [
+                                1054,
+                                169
+                            ]
+                        ]
+                    },
+                    "confidence_level": "HIGH",
+                    "line_number": null,
+                    "reading_order": 1,
+                    "normalized_text": null,
+                    "block_id": 1,
+                    "page_id": null,
+                    "is_header": false,
+                    "is_table": false,
+                    "is_diagram": false
+                },
+                {
+                    "id": 2,
+                    "text": "→ Show",
+                    "confidence": 0.8814994692802429,
+                    "bbox": {
+                        "points": [
+                            [
+                                190,
+                                221
+                            ],
+                            [
+                                372,
+                                221
+                            ],
+                            [
+                                372,
+                                292
+                            ],
+                            [
+                                190,
+                                292
+                            ]
+                        ]
+                    },
+                    "confidence_level": "HIGH",
+                    "line_number": null,
+                    "reading_order": 2,
+                    "normalized_text": null,
+                    "block_id": 2,
+                    "page_id": null,
+                    "is_header": false,
+                    "is_table": false,
+                    "is_diagram": false
+                },
+                {
+                    "id": 3,
+                    "text": "Datadump sor 8 tests. (Kowsuya).",
+                    "confidence": 0.938210129737854,
+                    "bbox": {
+                        "points": [
+                            [
+                                179,
+                                280
+                            ],
+                            [
+                                1076,
+                                280
+                            ],
+                            [
+                                1076,
+                                378
+                            ],
+                            [
+                                179,
+                                378
+                            ]
+                        ]
+                    },
+                    "confidence_level": "HIGH",
+                    "line_number": null,
+                    "reading_order": 3,
+                    "normalized_text": null,
+                    "block_id": 3,
+                    "page_id": null,
+                    "is_header": false,
+                    "is_table": false,
+                    "is_diagram": false
+                },
+                {
+                    "id": 4,
+                    "text": "Datadump for my Analysis",
+                    "confidence": 0.9751468300819397,
+                    "bbox": {
+                        "points": [
+                            [
+                                282,
+                                363
+                            ],
+                            [
+                                927,
+                                363
+                            ],
+                            [
+                                927,
+                                453
+                            ],
+                            [
+                                282,
+                                453
+                            ]
+                        ]
+                    },
+                    "confidence_level": "HIGH",
+                    "line_number": null,
+                    "reading_order": 4,
+                    "normalized_text": null,
+                    "block_id": 4,
+                    "page_id": null,
+                    "is_header": false,
+                    "is_table": false,
+                    "is_diagram": false
+                },
+                {
+                    "id": 5,
+                    "text": "7",
+                    "confidence": 0.7623972296714783,
+                    "bbox": {
+                        "points": [
+                            [
+                                184,
+                                391
+                            ],
+                            [
+                                254,
+                                391
+                            ],
+                            [
+                                254,
+                                440
+                            ],
+                            [
+                                184,
+                                440
+                            ]
+                        ]
+                    },
+                    "confidence_level": "MEDIUM",
+                    "line_number": null,
+                    "reading_order": 5,
+                    "normalized_text": null,
+                    "block_id": 4,
+                    "page_id": null,
+                    "is_header": false,
+                    "is_table": false,
+                    "is_diagram": false
+                },
+                {
+                    "id": 6,
+                    "text": "Wormspace for Getaway. (Done)",
+                    "confidence": 0.9480159878730774,
+                    "bbox": {
+                        "points": [
+                            [
+                                266,
+                                433
+                            ],
+                            [
+                                985,
+                                433
+                            ],
+                            [
+                                985,
+                                536
+                            ],
+                            [
+                                266,
+                                536
+                            ]
+                        ]
+                    },
+                    "confidence_level": "HIGH",
+                    "line_number": null,
+                    "reading_order": 6,
+                    "normalized_text": null,
+                    "block_id": 5,
+                    "page_id": null,
+                    "is_header": false,
+                    "is_table": false,
+                    "is_diagram": false
+                },
+                {
+                    "id": 7,
+                    "text": "7",
+                    "confidence": 0.8845323920249939,
+                    "bbox": {
+                        "points": [
+                            [
+                                180,
+                                458
+                            ],
+                            [
+                                238,
+                                458
+                            ],
+                            [
+                                238,
+                                510
+                            ],
+                            [
+                                180,
+                                510
+                            ]
+                        ]
+                    },
+                    "confidence_level": "HIGH",
+                    "line_number": null,
+                    "reading_order": 7,
+                    "normalized_text": null,
+                    "block_id": 5,
+                    "page_id": null,
+                    "is_header": false,
+                    "is_table": false,
+                    "is_diagram": false
+                },
+                {
+                    "id": 9,
+                    "text": "Change deat Color Analysis. (RWw).",
+                    "confidence": 0.8704361915588379,
+                    "bbox": {
+                        "points": [
+                            [
+                                248,
+                                513
+                            ],
+                            [
+                                955,
+                                513
+                            ],
+                            [
+                                955,
+                                615
+                            ],
+                            [
+                                248,
+                                615
+                            ]
+                        ]
+                    },
+                    "confidence_level": "HIGH",
+                    "line_number": null,
+                    "reading_order": 8,
+                    "normalized_text": null,
+                    "block_id": 6,
+                    "page_id": null,
+                    "is_header": false,
+                    "is_table": false,
+                    "is_diagram": false
+                },
+                {
+                    "id": 8,
+                    "text": "7",
+                    "confidence": 0.9896496534347534,
+                    "bbox": {
+                        "points": [
+                            [
+                                167,
+                                525
+                            ],
+                            [
+                                245,
+                                525
+                            ],
+                            [
+                                245,
+                                583
+                            ],
+                            [
+                                167,
+                                583
+                            ]
+                        ]
+                    },
+                    "confidence_level": "HIGH",
+                    "line_number": null,
+                    "reading_order": 9,
+                    "normalized_text": null,
+                    "block_id": 6,
+                    "page_id": null,
+                    "is_header": false,
+                    "is_table": false,
+                    "is_diagram": false
+                },
+                {
+                    "id": 10,
+                    "text": "281712006",
+                    "confidence": 0.96524578332901,
+                    "bbox": {
+                        "points": [
+                            [
+                                111,
+                                659
+                            ],
+                            [
+                                333,
+                                659
+                            ],
+                            [
+                                333,
+                                743
+                            ],
+                            [
+                                111,
+                                743
+                            ]
+                        ]
+                    },
+                    "confidence_level": "HIGH",
+                    "line_number": null,
+                    "reading_order": 10,
+                    "normalized_text": null,
+                    "block_id": 7,
+                    "page_id": null,
+                    "is_header": false,
+                    "is_table": false,
+                    "is_diagram": false
+                },
+                {
+                    "id": 11,
+                    "text": "Grtway Segrments for prd grawry",
+                    "confidence": 0.7081339359283447,
+                    "bbox": {
+                        "points": [
+                            [
+                                215,
+                                800
+                            ],
+                            [
+                                1171,
+                                800
+                            ],
+                            [
+                                1171,
+                                929
+                            ],
+                            [
+                                215,
+                                929
+                            ]
+                        ]
+                    },
+                    "confidence_level": "MEDIUM",
+                    "line_number": null,
+                    "reading_order": 11,
+                    "normalized_text": null,
+                    "block_id": 8,
+                    "page_id": null,
+                    "is_header": false,
+                    "is_table": false,
+                    "is_diagram": false
+                },
+                {
+                    "id": 12,
+                    "text": "Deport Shirte,",
+                    "confidence": 0.9321836233139038,
+                    "bbox": {
+                        "points": [
+                            [
+                                693,
+                                895
+                            ],
+                            [
+                                994,
+                                895
+                            ],
+                            [
+                                994,
+                                983
+                            ],
+                            [
+                                693,
+                                983
+                            ]
+                        ]
+                    },
+                    "confidence_level": "HIGH",
+                    "line_number": null,
+                    "reading_order": 12,
+                    "normalized_text": null,
+                    "block_id": 9,
+                    "page_id": null,
+                    "is_header": false,
+                    "is_table": false,
+                    "is_diagram": false
+                },
+                {
+                    "id": 13,
+                    "text": "delution",
+                    "confidence": 0.8948681950569153,
+                    "bbox": {
+                        "points": [
+                            [
+                                385,
+                                943
+                            ],
+                            [
+                                560,
+                                943
+                            ],
+                            [
+                                560,
+                                1080
+                            ],
+                            [
+                                385,
+                                1080
+                            ]
+                        ]
+                    },
+                    "confidence_level": "HIGH",
+                    "line_number": null,
+                    "reading_order": 13,
+                    "normalized_text": null,
+                    "block_id": 9,
+                    "page_id": null,
+                    "is_header": false,
+                    "is_table": false,
+                    "is_diagram": false
+                },
+                {
+                    "id": 14,
+                    "text": "Seat",
+                    "confidence": 0.9997137784957886,
+                    "bbox": {
+                        "points": [
+                            [
+                                312,
+                                1025
+                            ],
+                            [
+                                421,
+                                1025
+                            ],
+                            [
+                                421,
+                                1108
+                            ],
+                            [
+                                312,
+                                1108
+                            ]
+                        ]
+                    },
+                    "confidence_level": "HIGH",
+                    "line_number": null,
+                    "reading_order": 14,
+                    "normalized_text": null,
+                    "block_id": 10,
+                    "page_id": null,
+                    "is_header": false,
+                    "is_table": false,
+                    "is_diagram": false
+                },
+                {
+                    "id": 15,
+                    "text": "8",
+                    "confidence": 0.8304267525672913,
+                    "bbox": {
+                        "points": [
+                            [
+                                419,
+                                1071
+                            ],
+                            [
+                                469,
+                                1071
+                            ],
+                            [
+                                469,
+                                1116
+                            ],
+                            [
+                                419,
+                                1116
+                            ]
+                        ]
+                    },
+                    "confidence_level": "HIGH",
+                    "line_number": null,
+                    "reading_order": 15,
+                    "normalized_text": null,
+                    "block_id": 11,
+                    "page_id": null,
+                    "is_header": false,
+                    "is_table": false,
+                    "is_diagram": false
+                },
+                {
+                    "id": 16,
+                    "text": "( Tier and caud memper.)",
+                    "confidence": 0.8825411796569824,
+                    "bbox": {
+                        "points": [
+                            [
+                                762,
+                                1188
+                            ],
+                            [
+                                1240,
+                                1188
+                            ],
+                            [
+                                1240,
+                                1276
+                            ],
+                            [
+                                762,
+                                1276
+                            ]
+                        ]
+                    },
+                    "confidence_level": "HIGH",
+                    "line_number": null,
+                    "reading_order": 16,
+                    "normalized_text": null,
+                    "block_id": 12,
+                    "page_id": null,
+                    "is_header": false,
+                    "is_table": false,
+                    "is_diagram": false
+                },
+                {
+                    "id": 17,
+                    "text": "Include",
+                    "confidence": 0.8952641487121582,
+                    "bbox": {
+                        "points": [
+                            [
+                                241,
+                                1333
+                            ],
+                            [
+                                415,
+                                1333
+                            ],
+                            [
+                                415,
+                                1423
+                            ],
+                            [
+                                241,
+                                1423
+                            ]
+                        ]
+                    },
+                    "confidence_level": "HIGH",
+                    "line_number": null,
+                    "reading_order": 17,
+                    "normalized_text": null,
+                    "block_id": 13,
+                    "page_id": null,
+                    "is_header": false,
+                    "is_table": false,
+                    "is_diagram": false
+                },
+                {
+                    "id": 18,
+                    "text": "Metrics",
+                    "confidence": 0.9975467920303345,
+                    "bbox": {
+                        "points": [
+                            [
+                                467,
+                                1347
+                            ],
+                            [
+                                636,
+                                1347
+                            ],
+                            [
+                                636,
+                                1423
+                            ],
+                            [
+                                467,
+                                1423
+                            ]
+                        ]
+                    },
+                    "confidence_level": "HIGH",
+                    "line_number": null,
+                    "reading_order": 18,
+                    "normalized_text": null,
+                    "block_id": 13,
+                    "page_id": null,
+                    "is_header": false,
+                    "is_table": false,
+                    "is_diagram": false
+                },
+                {
+                    "id": 19,
+                    "text": "Pilated to Seat. from new Worhspace.",
+                    "confidence": 0.9489699602127075,
+                    "bbox": {
+                        "points": [
+                            [
+                                325,
+                                1424
+                            ],
+                            [
+                                1300,
+                                1424
+                            ],
+                            [
+                                1300,
+                                1511
+                            ],
+                            [
+                                325,
+                                1511
+                            ]
+                        ]
+                    },
+                    "confidence_level": "HIGH",
+                    "line_number": null,
+                    "reading_order": 19,
+                    "normalized_text": null,
+                    "block_id": 14,
+                    "page_id": null,
+                    "is_header": false,
+                    "is_table": false,
+                    "is_diagram": false
+                },
+                {
+                    "id": 20,
+                    "text": "ue rier and Carnd mimner.",
+                    "confidence": 0.8129371404647827,
+                    "bbox": {
+                        "points": [
+                            [
+                                105,
+                                1492
+                            ],
+                            [
+                                829,
+                                1492
+                            ],
+                            [
+                                829,
+                                1590
+                            ],
+                            [
+                                105,
+                                1590
+                            ]
+                        ]
+                    },
+                    "confidence_level": "HIGH",
+                    "line_number": null,
+                    "reading_order": 20,
+                    "normalized_text": null,
+                    "block_id": 15,
+                    "page_id": null,
+                    "is_header": false,
+                    "is_table": false,
+                    "is_diagram": false
+                }
+            ],
+            "blocks": [
+                {
+                    "id": 1,
+                    "text": "Date :",
+                    "bbox": {
+                        "points": [
+                            [
+                                1054,
+                                121
+                            ],
+                            [
+                                1150,
+                                121
+                            ],
+                            [
+                                1150,
+                                169
+                            ],
+                            [
+                                1054,
+                                169
+                            ]
+                        ]
+                    },
+                    "word_ids": [
+                        1
+                    ],
+                    "block_type": "text",
+                    "confidence": 0.9631860256195068,
+                    "line_count": 1,
+                    "page_number": 1,
+                    "word_count": 1,
+                    "first_word_id": 1,
+                    "last_word_id": 1,
+                    "requires_qwen": false,
+                    "crop_path": null,
+                    "enhanced_text": null,
+                    "qwen_reason": null
+                },
+                {
+                    "id": 2,
+                    "text": "→ Show\nDatadump sor 8 tests. (Kowsuya).\nDatadump for my Analysis 7\nWormspace for Getaway. (Done) 7\nChange deat Color Analysis. (RWw). 7",
+                    "bbox": {
+                        "points": [
+                            [
+                                167,
+                                221
+                            ],
+                            [
+                                1076,
+                                221
+                            ],
+                            [
+                                1076,
+                                615
+                            ],
+                            [
+                                167,
+                                615
+                            ]
+                        ]
+                    },
+                    "word_ids": [
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        9,
+                        8
+                    ],
+                    "block_type": "text",
+                    "confidence": 0.9164183624088764,
+                    "line_count": 5,
+                    "page_number": 1,
+                    "word_count": 8,
+                    "first_word_id": 2,
+                    "last_word_id": 8,
+                    "requires_qwen": false,
+                    "crop_path": null,
+                    "enhanced_text": null,
+                    "qwen_reason": null
+                },
+                {
+                    "id": 7,
+                    "text": "281712006",
+                    "bbox": {
+                        "points": [
+                            [
+                                111,
+                                659
+                            ],
+                            [
+                                333,
+                                659
+                            ],
+                            [
+                                333,
+                                743
+                            ],
+                            [
+                                111,
+                                743
+                            ]
+                        ]
+                    },
+                    "word_ids": [
+                        10
+                    ],
+                    "block_type": "text",
+                    "confidence": 0.96524578332901,
+                    "line_count": 1,
+                    "page_number": 1,
+                    "word_count": 1,
+                    "first_word_id": 10,
+                    "last_word_id": 10,
+                    "requires_qwen": false,
+                    "crop_path": null,
+                    "enhanced_text": null,
+                    "qwen_reason": null
+                },
+                {
+                    "id": 8,
+                    "text": "Grtway Segrments for prd grawry",
+                    "bbox": {
+                        "points": [
+                            [
+                                215,
+                                800
+                            ],
+                            [
+                                1171,
+                                800
+                            ],
+                            [
+                                1171,
+                                929
+                            ],
+                            [
+                                215,
+                                929
+                            ]
+                        ]
+                    },
+                    "word_ids": [
+                        11
+                    ],
+                    "block_type": "text",
+                    "confidence": 0.7081339359283447,
+                    "line_count": 1,
+                    "page_number": 1,
+                    "word_count": 1,
+                    "first_word_id": 11,
+                    "last_word_id": 11,
+                    "requires_qwen": true,
+                    "crop_path": null,
+                    "enhanced_text": null,
+                    "qwen_reason": "low_confidence"
+                },
+                {
+                    "id": 9,
+                    "text": "Deport Shirte, delution",
+                    "bbox": {
+                        "points": [
+                            [
+                                385,
+                                895
+                            ],
+                            [
+                                994,
+                                895
+                            ],
+                            [
+                                994,
+                                1080
+                            ],
+                            [
+                                385,
+                                1080
+                            ]
+                        ]
+                    },
+                    "word_ids": [
+                        12,
+                        13
+                    ],
+                    "block_type": "header",
+                    "confidence": 0.9135259091854095,
+                    "line_count": 1,
+                    "page_number": 1,
+                    "word_count": 2,
+                    "first_word_id": 12,
+                    "last_word_id": 13,
+                    "requires_qwen": false,
+                    "crop_path": null,
+                    "enhanced_text": null,
+                    "qwen_reason": null
+                },
+                {
+                    "id": 10,
+                    "text": "Seat",
+                    "bbox": {
+                        "points": [
+                            [
+                                312,
+                                1025
+                            ],
+                            [
+                                421,
+                                1025
+                            ],
+                            [
+                                421,
+                                1108
+                            ],
+                            [
+                                312,
+                                1108
+                            ]
+                        ]
+                    },
+                    "word_ids": [
+                        14
+                    ],
+                    "block_type": "text",
+                    "confidence": 0.9997137784957886,
+                    "line_count": 1,
+                    "page_number": 1,
+                    "word_count": 1,
+                    "first_word_id": 14,
+                    "last_word_id": 14,
+                    "requires_qwen": false,
+                    "crop_path": null,
+                    "enhanced_text": null,
+                    "qwen_reason": null
+                },
+                {
+                    "id": 11,
+                    "text": "8",
+                    "bbox": {
+                        "points": [
+                            [
+                                419,
+                                1071
+                            ],
+                            [
+                                469,
+                                1071
+                            ],
+                            [
+                                469,
+                                1116
+                            ],
+                            [
+                                419,
+                                1116
+                            ]
+                        ]
+                    },
+                    "word_ids": [
+                        15
+                    ],
+                    "block_type": "text",
+                    "confidence": 0.8304267525672913,
+                    "line_count": 1,
+                    "page_number": 1,
+                    "word_count": 1,
+                    "first_word_id": 15,
+                    "last_word_id": 15,
+                    "requires_qwen": false,
+                    "crop_path": null,
+                    "enhanced_text": null,
+                    "qwen_reason": null
+                },
+                {
+                    "id": 12,
+                    "text": "( Tier and caud memper.)",
+                    "bbox": {
+                        "points": [
+                            [
+                                762,
+                                1188
+                            ],
+                            [
+                                1240,
+                                1188
+                            ],
+                            [
+                                1240,
+                                1276
+                            ],
+                            [
+                                762,
+                                1276
+                            ]
+                        ]
+                    },
+                    "word_ids": [
+                        16
+                    ],
+                    "block_type": "text",
+                    "confidence": 0.8825411796569824,
+                    "line_count": 1,
+                    "page_number": 1,
+                    "word_count": 1,
+                    "first_word_id": 16,
+                    "last_word_id": 16,
+                    "requires_qwen": false,
+                    "crop_path": null,
+                    "enhanced_text": null,
+                    "qwen_reason": null
+                },
+                {
+                    "id": 13,
+                    "text": "Include Metrics",
+                    "bbox": {
+                        "points": [
+                            [
+                                241,
+                                1333
+                            ],
+                            [
+                                636,
+                                1333
+                            ],
+                            [
+                                636,
+                                1423
+                            ],
+                            [
+                                241,
+                                1423
+                            ]
+                        ]
+                    },
+                    "word_ids": [
+                        17,
+                        18
+                    ],
+                    "block_type": "text",
+                    "confidence": 0.9464054703712463,
+                    "line_count": 1,
+                    "page_number": 1,
+                    "word_count": 2,
+                    "first_word_id": 17,
+                    "last_word_id": 18,
+                    "requires_qwen": false,
+                    "crop_path": null,
+                    "enhanced_text": null,
+                    "qwen_reason": null
+                },
+                {
+                    "id": 14,
+                    "text": "Pilated to Seat. from new Worhspace.",
+                    "bbox": {
+                        "points": [
+                            [
+                                325,
+                                1424
+                            ],
+                            [
+                                1300,
+                                1424
+                            ],
+                            [
+                                1300,
+                                1511
+                            ],
+                            [
+                                325,
+                                1511
+                            ]
+                        ]
+                    },
+                    "word_ids": [
+                        19
+                    ],
+                    "block_type": "text",
+                    "confidence": 0.9489699602127075,
+                    "line_count": 1,
+                    "page_number": 1,
+                    "word_count": 1,
+                    "first_word_id": 19,
+                    "last_word_id": 19,
+                    "requires_qwen": false,
+                    "crop_path": null,
+                    "enhanced_text": null,
+                    "qwen_reason": null
+                },
+                {
+                    "id": 15,
+                    "text": "ue rier and Carnd mimner.",
+                    "bbox": {
+                        "points": [
+                            [
+                                105,
+                                1492
+                            ],
+                            [
+                                829,
+                                1492
+                            ],
+                            [
+                                829,
+                                1590
+                            ],
+                            [
+                                105,
+                                1590
+                            ]
+                        ]
+                    },
+                    "word_ids": [
+                        20
+                    ],
+                    "block_type": "text",
+                    "confidence": 0.8129371404647827,
+                    "line_count": 1,
+                    "page_number": 1,
+                    "word_count": 1,
+                    "first_word_id": 20,
+                    "last_word_id": 20,
+                    "requires_qwen": false,
+                    "crop_path": null,
+                    "enhanced_text": null,
+                    "qwen_reason": null
+                }
+            ],
+            "average_confidence": 0.9040452599525451,
+            "low_confidence_count": 0,
+            "total_words": 20,
+            "total_blocks": 11
+        }
+    ],
+    "markdown": "",
+    "enhanced_markdown": "```markdown\nDate :\n\nShow\nData dump for 8 tests. (Kowsuya).\nData dump for my Analysis.\nWormspace for getaway. (Done).\nChange seat color analysis. (Review).\n\n281712006\n\nGateway segments for prod getaway\nReport Suite,\nSeat delution\nNavigation\n(Tier and card members)\nInclude metrics\nPiloted to Seat from new Wormspace.\nUse tier and card number.\n```",
+    "metadata": {},
+    "statistics": {}
+}

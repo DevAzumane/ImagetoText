@@ -1,0 +1,9 @@
+paddleocr
+paddlepaddle
+torch
+torchvision
+transformers
+accelerate
+pillow
+qwen-vl-utils
+opencv-python
